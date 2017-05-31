@@ -84,7 +84,8 @@
                   message: rcvData.message? rcvData.message : "站点添加成功",
                   duration: 2000
                 })
-              self.addSiteDialog = false;
+                self.addSiteDialog = false;
+                self.getSiteList();
             }
             else {
               Notification.error({
