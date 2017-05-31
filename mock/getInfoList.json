@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": [
+    {
+      "InfoTypeName": "公司公告",
+      "infoTypeId": 1,
+      "infoList": [
+        {
+          "id": 1,
+          "info_type": 1,
+          "info_content": "星期六正常上班",
+          "user_id": 1,
+          "start_time": "2017-05-26",
+          "end_time": "2017-05-29",
+          "progress": null,
+          "created_at": "2017-03-31 16:29:05",
+          "updated_at": "2017-03-31 16:29:07"
+        }
+      ]
+    },
+    {
+      "InfoTypeName": "任务",
+      "infoTypeId": 2,
+      "infoList": [
+        {
+          "id": 1,
+          "info_type": 1,
+          "info_content": "完成手头工作",
+          "user_id": 1,
+          "start_time": "2017-05-26",
+          "end_time": "2017-05-29",
+          "progress": "70",
+          "created_at": "2017-03-31 16:29:05",
+          "updated_at": "2017-03-31 16:29:07"
+        },
+        {
+          "id": 1,
+          "info_type": 1,
+          "info_content": "完成mainpage",
+          "user_id": 1,
+          "start_time": "2017-05-26",
+          "end_time": "2017-05-29",
+          "progress": "50",
+          "created_at": "2017-03-31 16:29:05",
+          "updated_at": "2017-03-31 16:29:07"
+        }
+      ]
+    }
+  ]
+}

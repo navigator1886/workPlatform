@@ -1,0 +1,49 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "siteTypeMap": {
+      "1": "常用网站",
+      "2": "开发工具",
+      "3": "学习网站"
+    },
+    "siteList": [
+      {
+        "id": 1,
+        "site_name": "百度",
+        "site_url": "www.baidu.com",
+        "site_type": 1,
+        "user_id": 1,
+        "updated_at": "2017-03-31 14:14:05",
+        "created_at": "2017-03-31 14:14:07"
+      },
+      {
+        "id": 1,
+        "site_name": "淘宝",
+        "site_url": "www.baidu.com",
+        "site_type": 2,
+        "user_id": 1,
+        "updated_at": "2017-03-31 14:14:05",
+        "created_at": "2017-03-31 14:14:07"
+      },
+      {
+        "id": 1,
+        "site_name": "京东",
+        "site_url": "www.baidu.com",
+        "site_type": 3,
+        "user_id": 1,
+        "updated_at": "2017-03-31 14:14:05",
+        "created_at": "2017-03-31 14:14:07"
+      },
+      {
+        "id": 1,
+        "site_name": "苏宁",
+        "site_url": "www.baidu.com",
+        "site_type": 2,
+        "user_id": 1,
+        "updated_at": "2017-03-31 14:14:05",
+        "created_at": "2017-03-31 14:14:07"
+      }
+    ]
+  }
+}

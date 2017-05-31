@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="设计者: 黄龙旺">
+    <meta name="description" content="巴弗工作室成员工作平台">
+    <meta name="keywords" content="游戏交易，buff，巴弗工作室，黄龙旺">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>巴弗工作室</title>
+    <style>
+      *{margin: 0;padding: 0;}
+      li{
+        list-style: none;
+      }
+      html{
+        font-size: 62.5%;
+        font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+      }
+      body{
+        font-size: 1.4rem;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+    <script>
+      function checkHttps () {
+        BaiduHttps.useHttps();
+      };
+      function baiduWithHttps (formname) {
+        var data = BaiduHttps.useHttps();
+        if (data.s === 0) {
+          return true;
+        }
+        else {
+          formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+          return true;
+        }
+      };
+    </script>
+  </body>
+</html>

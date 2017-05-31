@@ -1,0 +1,9 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "isLogin":1,
+    "user":"baiyu",
+    "id": "1"
+  }
+}
