@@ -191,6 +191,7 @@
                   duration: 2000
                 })
               self.addPlan = false;
+              self.getInfo();
             }
             else{
               Notification.error({

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0402700e-a113-4e8c-b0e3-6a79fc0b0dee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/sites.vue" afterPath="$PROJECT_DIR$/src/view/sites.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/platform.vue" afterPath="$PROJECT_DIR$/src/view/platform.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,8 +58,8 @@
       <file leaf-file-name="sites.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/view/sites.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="97" column="6" lean-forward="true" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
+            <state relative-caret-position="99">
+              <caret line="60" column="35" lean-forward="true" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#el-form-item#1;n#el-form#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -74,8 +73,8 @@
       <file leaf-file-name="platform.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/platform.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2143">
-              <caret line="118" column="46" lean-forward="true" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
+            <state relative-caret-position="293">
+              <caret line="194" column="13" lean-forward="true" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#el-dropdown#0;n#el-row#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#el-date-picker#0;n#el-col#0;n#el-form-item#1;n#el-form#0;n#el-dialog#0;n#el-row#0;n#template#0;n#!!top" expanded="true" />
@@ -126,8 +125,8 @@
         <option value="$PROJECT_DIR$/src/view/home.vue" />
         <option value="$PROJECT_DIR$/mock/updateProgress.json" />
         <option value="$PROJECT_DIR$/mock/getInfoList.json" />
-        <option value="$PROJECT_DIR$/src/view/platform.vue" />
         <option value="$PROJECT_DIR$/src/view/sites.vue" />
+        <option value="$PROJECT_DIR$/src/view/platform.vue" />
       </list>
     </option>
   </component>
@@ -391,12 +390,20 @@
       <workItem from="1496021161355" duration="22558000" />
       <workItem from="1496104582102" duration="10070000" />
       <workItem from="1496146260209" duration="6863000" />
-      <workItem from="1496190994150" duration="20206000" />
+      <workItem from="1496190994150" duration="21188000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed some bug">
+      <created>1496216750399</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1496216750399</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97347000" />
+    <option name="totallyTimeSpent" value="98329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -426,6 +433,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed some bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -798,8 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/platform.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2143">
-          <caret line="118" column="46" lean-forward="true" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
+        <state relative-caret-position="293">
+          <caret line="194" column="13" lean-forward="true" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#el-dropdown#0;n#el-row#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-date-picker#0;n#el-col#0;n#el-form-item#1;n#el-form#0;n#el-dialog#0;n#el-row#0;n#template#0;n#!!top" expanded="true" />
@@ -818,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/sites.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="97" column="6" lean-forward="true" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
+        <state relative-caret-position="99">
+          <caret line="60" column="35" lean-forward="true" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#div#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#el-form-item#1;n#el-form#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
