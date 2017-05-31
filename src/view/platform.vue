@@ -161,6 +161,7 @@
         self.$notify({
             title:"今日计划",
             message: content? content: "暂无任务",
+            offset: 60,
             duration: 0
           })
       },
