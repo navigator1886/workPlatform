@@ -1,22 +1,39 @@
 <template>
-  <div>
-    <el-tabs v-model="siteInfo.siteType" class="website">
-      <el-tab-pane v-for="(type,key) in category"
-                   v-if="category"
-                   :label="type"
-                   :key="key"
-                   :name="key">
-        <a v-for="(site,index) in sites"
-           :href="site.site_url"
-           target="_blank"
-           :key="index"
-           v-if="site.site_type == key">{{site.site_name}}</a>
-        <a hre="#" class="el-icon-plus" @click="addSiteDialog = true"></a>
-      </el-tab-pane>
-    </el-tabs>
+  <el-row>
+    <!--<el-tabs v-model="siteInfo.siteType" class="website">-->
+      <!--<el-tab-pane v-for="(type,key) in category"-->
+                   <!--v-if="category"-->
+                   <!--:label="type"-->
+                   <!--:key="key"-->
+                   <!--:name="key">-->
+        <!--<a v-for="(site,index) in sites"-->
+           <!--:href="site.site_url"-->
+           <!--target="_blank"-->
+           <!--:key="index"-->
+           <!--v-if="site.site_type == key">{{site.site_name}}</a>-->
+        <!--<a hre="#" class="el-icon-plus" @click="addSiteDialog = true"></a>-->
+      <!--</el-tab-pane>-->
+    <!--</el-tabs>-->
+    <el-col :span="24"
+            v-for="(type,key) in category"
+            class="websites">
+      <el-col :span="4">
+        <label><strong>{{type}}</strong></label>
+      </el-col>
+      <el-col :span="20">
+        <nav :data-navType = "key">
+          <a target="_blank"
+             v-for="(site,index) in sites"
+             v-if="site.site_type == key"
+             :href="'http://' + site.site_url">{{site.site_name}}</a>
+          <a href="#" @click="addSiteDialog = true; siteInfo.siteType = key"><i class="el-icon-plus"></i></a>
+        </nav>
+      </el-col>
+    </el-col>
     <!--add site dialog-->
     <el-dialog
       :visible.sync="addSiteDialog"
+      @close="siteInfo.siteName=''; siteInfo.siteUrl=''"
       size="tiny">
       <div slot="title" style="text-align: center">
         <h2>添加站点</h2>
@@ -28,7 +45,6 @@
         <el-form-item label="站点链接">
           <el-input placeholder="请输入站点链接"
                     v-model.trim = "siteInfo.siteUrl">
-            <template slot="prepend">Http://</template>
           </el-input>
           <p v-if="errMsg" style="color: red">{{errMsg}}</p>
         </el-form-item>
@@ -39,10 +55,13 @@
                    @click="submitSiteInfo()">提交</el-button>
       </div>
     </el-dialog>
-  </div>
+  </el-row>
 </template>
 <style scoped>
-  .website a{
+  .websites{
+    margin-top: 2rem;
+  }
+  .websites a{
     padding-left: 2rem;
   }
 </style>
@@ -99,7 +118,7 @@
     computed:{
       errMsg: function () {
         if(this.siteInfo.siteUrl && !/\w+\.\w+\.\S+/i.test(this.siteInfo.siteUrl)){
-            return "请输入正确的网址"
+            return "请输入正确的网址，如: www.jd.com"
         }else {
             return null;
         }
