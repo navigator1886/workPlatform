@@ -80,9 +80,6 @@
         <el-table-column
           prop="end_time"
           label="结束时间"></el-table-column>
-        <!--<el-table-column-->
-          <!--prop="progress"-->
-          <!--label="当前进度"></el-table-column>-->
         <el-table-column
           label="任务进度(%)">
           <template scope="scope">
@@ -91,10 +88,6 @@
               @change="handleEdit(scope.$index, scope.row)"></el-input-number>
           </template></el-table-column>
       </el-table>
-      <!--<div slot="footer" style="text-align: center">-->
-        <!--<el-button style="width: 20rem"-->
-                   <!--type="primary">更新</el-button>-->
-      <!--</div>-->
     </el-dialog>
   </el-row>
 </template>
@@ -178,14 +171,18 @@
       },
       postInfo(){
         var self = this;
-        $.post("/mainPage/mainPage/addPlan",self.info,function (rcvData) {
-            if(!self.info.infoContent || !self.info.infoType || !self.info.startTime || !self.info.endTime){
-                self.errMsg = "请将表单填写完整！";
-                return;
-            }
-            else{
-                self.errMsg = null;
-            }
+        if(!self.info.infoContent || !self.info.infoType || !self.info.startTime || !self.info.endTime){
+          self.errMsg = "请将表单填写完整！";
+          return;
+        }
+        else{
+          self.errMsg = null;
+        }
+        var sendData = {infoCentent: self.info.infoContent,
+                        infoType: self.infoType,
+                        startTime: self.info.startTime.toLocaleDateString(),
+                        endTime: self.info.endTime.toLocaleDateString()};
+        $.post("/mainPage/mainPage/addPlan",sendData,function (rcvData) {
             if(rcvData.code == 0){
                 Notification.success({
                   message: rcvData.message? rcvData.message:"计划添加成功",
