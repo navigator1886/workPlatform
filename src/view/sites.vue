@@ -16,6 +16,7 @@
     <!--</el-tabs>-->
     <el-col :span="24"
             v-for="(type,key) in category"
+            :key="key"
             class="websites">
       <el-col :span="4">
         <label><strong>{{type}}</strong></label>
