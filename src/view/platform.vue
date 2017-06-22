@@ -178,8 +178,8 @@
         else{
           self.errMsg = null;
         }
-        var sendData = {infoCentent: self.info.infoContent,
-                        infoType: self.infoType,
+        var sendData = {infoContent: self.info.infoContent,
+                        infoType: self.info.infoType,
                         startTime: self.info.startTime.toLocaleDateString(),
                         endTime: self.info.endTime.toLocaleDateString()};
         $.post("/mainPage/mainPage/addPlan",sendData,function (rcvData) {

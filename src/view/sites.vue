@@ -26,7 +26,7 @@
           <a target="_blank"
              v-for="(site,index) in sites"
              v-if="site.site_type == key"
-             :href="'http://' + site.site_url">{{site.site_name}}</a>
+             :href="site.site_url">{{site.site_name}}</a>
           <a href="#" @click="addSiteDialog = true; siteInfo.siteType = key"><i class="el-icon-plus"></i></a>
         </nav>
       </el-col>
